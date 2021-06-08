@@ -1,0 +1,168 @@
+/* MUTAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img,
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+p {
+  max-width: 60ch;
+}
+
+section {
+  display: grid;
+  grid-template-columns:
+    minmax(20px, 1fr) minmax(20px, 1fr) minmax(auto, 600px) minmax(20px, 1fr)
+    minmax(20px, 1fr);
+  /*padding-inline: 1rem;*/
+
+  padding-block: 40px;
+  /* padding-top: 40px; */
+  /* padding-bottom: 40px; */
+}
+
+section > * {
+  grid-column: 2 / 5;
+}
+
+section:nth-child(even) {
+  background: #5a189a;
+}
+
+section:nth-child(odd) {
+  background: white;
+}
+
+/* BURGER MENU */
+
+header {
+  background-color: #3c096c;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+#menu_knap {
+  display: inline-block;
+}
+
+#menu {
+  list-style-type: none;
+  transition: transform 0.3s;
+  transform-origin: top left;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  font-size: 0.6rem;
+}
+
+footer a {
+  font-weight: normal;
+}
+
+.footer_left {
+  border-left: 1px solid white;
+  padding: 10px;
+}
+
+.footer_middle {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  padding: 10px;
+}
+
+.footer_right {
+  border-right: 1px solid white;
+  padding: 10px;
+}
+
+/* INDEX */
+
+/*section 1 */
+
+#top_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+  margin-left: 8vw;
+  margin-bottom: 1vw;
+  color: #240046;
+}
+
+#h1_1 {
+  margin-top: 11vw;
+}
+
+#h1_2 {
+  margin-left: 16vw;
+}
+
+/*section 2 */
+
+#section_2 h2 {
+  margin-bottom: 2vw;
+  color: white;
+}
+
+#section_2 p {
+  margin-bottom: 2vw;
+  color: white;
+}
+
+#section_2_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/*section 3 */
+
+/* PROJEKT SIDE */
+
+.projekt {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 2vw;
+}
+
+.projekt_text {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+#projekt_section_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/******* DESKTOP / Media querries *********/
+@media (min-width: 600px) {
+  #menu_knap {
+    display: none;
+  }
+
+  #menu.hidden {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  #menu li {
+    display: inline-block;
+  }
+}
