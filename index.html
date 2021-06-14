@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
       <nav>
-        <div id="menuknap">☰</div>
-        <ul id="menu" class="hidden">
-          <li><a href="index.html">Forside</a></li>
-          <li><a href="om_mig.html">Om mig</a></li>
-          <li><a href="projekter.html">projekter</a></li>
-        </ul>
+        <div id="header_wrapper">
+          <div id="header_img">
+            <a href="index.html"><img src="logo.svg" alt="logo" /></a>
+          </div>
+          <div id="menu_wrapper">
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+              <li><a href="index.html">Forside</a></li>
+              <li><a href="om_mig.html">Om mig</a></li>
+              <li><a href="projekter.html">projekter</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -30,13 +47,14 @@
         </div>
       </section>
       <section id="section_2">
-        <h2>Multimediadesign vil nogen kalde det</h2>
+        <h2>Kreativ vil nogen kalde det</h2>
         <div id="section_2_wrapper">
           <div id="text_wrapper">
             <p>
               Året er 1999. Euroen etableres, Svampebob firkant bliver vist på
               tv for første gang og verdensbefolkningen når 6 milliarder. Samme
-              år, dog knap så mærkværdigt, bliver jeg født.
+              år bliver jeg født, og to årtier senere står mig og min krøllede
+              hjerne klar på alt hvad livet har at byde på.
             </p>
             <a href="om_mig.html">Læs mere om mig her</a>
           </div>
@@ -47,18 +65,33 @@
         <h3>"You only live once but if you do it right. Once is enough"</h3>
       </section>
       <section id="section_3">
+        <h2>Projekter</h2>
         <div class="slides">
-          <div><a href="projekter.html"> 1 </a></div>
-          <div><a href="projekter.html"> 2 </a></div>
-          <div><a href="projekter.html"> 3 </a></div>
+          <div id="slide_1">
+            <a href="projekter.html"> Redesign </a>
+          </div>
+          <div id="slide_2"><a href="projekter.html"> Animationsspil </a></div>
+          <div id="slide_3">
+            <a href="projekter.html"> Portræt video </a>
+          </div>
         </div>
-        <p>Farvel tak for besøget her er mine projekter</p>
+        <p>
+          Her kan du swipe mellem nogle udvalgte projekter, fra mit første
+          semester på Multimediedesign. Ellers kan du klikke på læs mere for et
+          overblik over alle mine projekter.
+        </p>
+        <a href="projekter.html">Klik her for læse mere om mine projekter</a>
       </section>
     </main>
     <footer>
-      <span class="footer_left">Kasper Engelbrecht</span>
-      <span class="footer_middle">Go outside instead of reading a footer</span>
-      <span class="footer_right">MMD - KEA 2021</span>
+      <div><img src="trekantArtboard 1.svg" alt="Trekant" /></div>
+      <div id="footer_wrapper">
+        <span class="footer_left">Kasper Engelbrecht</span>
+        <span class="footer_middle"
+          >Go outside instead of reading a footer</span
+        >
+        <span class="footer_right">MMD - KEA 2021</span>
+      </div>
     </footer>
 
     <script src="script.js"></script>
