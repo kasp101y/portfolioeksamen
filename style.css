@@ -83,9 +83,6 @@ h3 {
   font-size: clamp(1rem, 0.5714rem + 1.9048vw, 2rem);
 }
 
-h4 {
-}
-
 p {
   font-size: clamp(1rem, 0.9143rem + 0.381vw, 1.2rem);
 }
@@ -234,6 +231,7 @@ h1 {
   color: #289fed;
   font-family: "Poppins", sans-serif;
   line-height: 1.1;
+  font-size: clamp(1rem, 0.1429rem + 3.8095vw, 3rem);
 }
 
 #h1_1 {
@@ -463,6 +461,7 @@ h1 {
   box-shadow: 10px 10px 0px 0px #289fed, 20px 20px 0px 0px #5fb8ff;
   margin-bottom: 10vw;
 }
+
 iframe {
   position: revert;
   inset: revert;
@@ -564,6 +563,13 @@ iframe {
 
   #header_wrapper {
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 2vw;
+  }
+
+  main {
+    padding-top: 30px;
   }
 }
 
@@ -592,6 +598,27 @@ iframe {
   }
 }
 
+@media (max-width: 1200px) {
+  .hide {
+    display: none;
+  }
+}
+
 @media (min-width: 1200px) {
-  /*min-width*/
+  .element_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .no_background {
+    box-shadow: 20px 20px 0px 0px #5a189a !important;
+    height: 100%;
+  }
+
+  #menu a {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+  }
 }
