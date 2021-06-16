@@ -101,7 +101,7 @@ section {
     minmax(20px, 1fr);
   /*padding-inline: 1rem;*/
 
-  padding-block: 40px;
+  padding: 40px;
 
   padding-left: 2vw;
   padding-right: 2vw;
@@ -460,14 +460,6 @@ h1 {
 .projekter section img {
   box-shadow: 10px 10px 0px 0px #289fed, 20px 20px 0px 0px #5fb8ff;
   margin-bottom: 10vw;
-}
-
-iframe {
-  position: revert;
-  inset: revert;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
 }
 
 #top_wrapper_redesign {
